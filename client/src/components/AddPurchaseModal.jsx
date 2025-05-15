@@ -17,7 +17,7 @@ const AddPurchaseModal = ({ fetchProductss }) => {
 
   const fetchProducts = async () => {
     try {
-      const res = await axios.get("http://localhost:4000/products");
+      const res = await axios.get("https://stock-app-bxrj.onrender.com/products");
       setProductsData(res.data);
       // console.log(res.data);
     } catch (error) {
