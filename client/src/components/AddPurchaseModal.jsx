@@ -34,7 +34,7 @@ const AddPurchaseModal = ({ fetchProductss }) => {
     console.log(purchasesdata);
     try {
       const res = await axios.post(
-        "http://localhost:4000/purchase",
+        "https://stock-app-bxrj.onrender.com/purchase",
         purchasesdata
       );
       console.log(res);
